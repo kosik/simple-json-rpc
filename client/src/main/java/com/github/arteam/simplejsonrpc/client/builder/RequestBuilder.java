@@ -295,13 +295,16 @@ public class RequestBuilder<T> extends AbstractBuilder {
     /**
      * Execute a request through {@link Transport} and convert a not null response to an expected type
      *
+     * As per specification, Response object for result member is REQUIRED on success with v2.0;
+     * The result Object for v1.0 must be null in case there was an error invoking the method.
+     *
      * @return expected not null response
      * @throws JsonRpcException      in case of JSON-RPC error, returned by the server
      * @throws IllegalStateException if the response is null
      */
     public T execute() {
         T result = executeAndConvert();
-        if (result == null) {
+        if (result == null && this.protocolVersion.equals(2)) {
             throw new IllegalStateException("Response is null. Use 'executeNullable' if this is acceptable");
         }
         return result;
@@ -309,6 +312,9 @@ public class RequestBuilder<T> extends AbstractBuilder {
 
     /**
      * Execute a request through {@link Transport} and convert a nullable response to an expected type
+     *
+     * As per specification, Response object for result member is REQUIRED on success on v2.0;
+     * The result Object for v1.0 must be null in case there was an error invoking the method.
      *
      * @return expected response
      * @throws JsonRpcException in case of JSON-RPC error,  returned by the server
@@ -341,7 +347,8 @@ public class RequestBuilder<T> extends AbstractBuilder {
 
             if (null == error || error.isNull()) {
                 if (result != null) {
-                    return mapper.convertValue(result, javaType);
+                    return result.isNull() && this.protocolVersion.equals(1) ? null :
+                            mapper.convertValue(result, javaType);
                 } else {
                     throw new IllegalStateException("Neither result or error is set in a response: " + responseNode);
                 }
