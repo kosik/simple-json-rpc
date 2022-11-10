@@ -2,7 +2,7 @@ Simple JSON-RPC
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.kosik/simple-json-rpc-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.kosik/simple-json-rpc-client/)
 ===================
 
-Library for a simple integration of the [JSON-RPC 2.0](http://www.jsonrpc.org/specification) protocol to a Java
+Library for a simple integration of the [JSON-RPC 2.0](http://www.jsonrpc.org/specification) protocol to a Java.
 application. 
 
 The repository is [fork](https://github.com/arteam/simple-json-rpc). My updates allows work with JSON-RPC version 1.0; Plus make the library compatible with Java-10
