@@ -156,7 +156,7 @@ Maven:
 
 ```xml
 <dependency>
-   <groupId>io.github.arteam</groupId>
+   <groupId>io.github.kosik</groupId>
    <artifactId>simple-json-rpc-client</artifactId>
    <version>1.3</version>
 </dependency>

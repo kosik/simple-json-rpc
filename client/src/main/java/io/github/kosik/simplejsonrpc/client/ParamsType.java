@@ -1,0 +1,11 @@
+package io.github.kosik.simplejsonrpc.client;
+
+/**
+ * Date: 11/4/14
+ * Time: 10:14 PM
+ * <p>
+ * Style of JSON-RPC parameters representation (map or array)
+ */
+public enum ParamsType {
+    MAP, ARRAY
+}

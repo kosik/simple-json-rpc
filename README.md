@@ -1,5 +1,5 @@
 Simple JSON-RPC
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.arteam/simple-json-rpc-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.arteam/simple-json-rpc-client/)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.kosik/simple-json-rpc-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.kosik/simple-json-rpc-client/)
 ===================
 
 Library for a simple integration of the [JSON-RPC 2.0](http://www.jsonrpc.org/specification) protocol to a Java
