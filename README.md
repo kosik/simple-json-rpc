@@ -5,7 +5,7 @@ Simple JSON-RPC
 Library for a simple integration of the [JSON-RPC 2.0](http://www.jsonrpc.org/specification) protocol to a Java.
 application. 
 
-The repository is [fork](https://github.com/arteam/simple-json-rpc). My updates allows work with JSON-RPC version 1.0; Plus make the library compatible with Java-10
+The repository is [fork](https://github.com/arteam/simple-json-rpc). My updates allows work with JSON-RPC version 1.0; Plus make the library compatible with Java-10.
 
 The goal is to provide a simple, fast and reliable way to integrate JSON-RPC 2.0 into a Java application on the server
 and/or the client side. You need to configure respectively `JsonRpcServer` or `JsonRpcClient` and implement transport code:
