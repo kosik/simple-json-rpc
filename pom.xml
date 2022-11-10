@@ -30,12 +30,12 @@
     </properties>
 
     <scm>
-        <developerConnection>scm:git:git@github.com:arteam/simple-json-rpc.git</developerConnection>
-        <url>https://github.com/arteam/simple-json-rpc</url>
+        <developerConnection>scm:git:git@github.com:kosik/simple-json-rpc.git</developerConnection>
+        <url>https://github.com/kosik/simple-json-rpc</url>
         <tag>HEAD</tag>
     </scm>
 
-    <url>https://github.com/arteam/simple-json-rpc</url>
+    <url>https://github.com/kosik/simple-json-rpc</url>
 
     <developers>
         <developer>
@@ -43,6 +43,11 @@
             <name>Artem Prigoda</name>
             <email>prigoda.artem@ya.ru</email>
         </developer>
+        <developer>
+            <id>arteam</id>
+            <name>Sergio Kosik</name>
+            <email>skosoy@gmail.com</email>
+        </developer>             
     </developers>
 
     <licenses>
