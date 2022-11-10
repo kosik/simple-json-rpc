@@ -107,7 +107,7 @@ Maven:
 
 ```xml
 <dependency>
-   <groupId>com.github.arteam</groupId>
+   <groupId>io.github.arteam</groupId>
    <artifactId>simple-json-rpc-server</artifactId>
    <version>1.2</version>
 </dependency>
