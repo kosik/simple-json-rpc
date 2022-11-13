@@ -7,7 +7,7 @@ application.
 
 The repository is [fork](https://github.com/arteam/simple-json-rpc). My updates allows work with JSON-RPC version 1.0; Plus made the library compatible with Java-10. This is important because there are peers running specifically on JSON-RPC v1.0; Also this is important because Hibernate & Spring-data has isssues related specifically to the latest Java versions.
 
-The goal is to provide a simple, fast and reliable way to integrate JSON-RPC 2.0 into a Java application on the server
+The lib goal is to provide a simple, fast and reliable way to integrate JSON-RPC 2.0 into a Java application on the server
 and/or the client side. You need to configure respectively `JsonRpcServer` or `JsonRpcClient` and implement transport code:
 the library takes care of the rest. No manual JSON transformation, reflection and manual error handling, just a service
 interface with annotations. Even this is not a requirement! There is a fluent API on the client side if you prefer
